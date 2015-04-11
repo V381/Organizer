@@ -2,7 +2,7 @@
 
 <hr>
 
-<p>Collection of small useful apps, written with BackboneJs/Javascript</p>
+<p>Collection of small useful apps, written with Backbone.js/Javascript</p>
 
 <ul>
   <li>Alarm</li>
