@@ -3,6 +3,7 @@
 <hr>
 
 <p>Collection of small useful apps, written with Backbone.js/Javascript</p>
+<p>Scss is written with fluid/responsive in mind</p>
 
 <ul>
   <li>Alarm</li>
