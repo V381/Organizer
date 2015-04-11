@@ -37,4 +37,4 @@
   </ul>
 <hr>
 
-Data for all apps is saved in localStorage.
+Data for all apps is stored in localStorage.
