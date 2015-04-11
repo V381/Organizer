@@ -39,5 +39,5 @@
 <hr>
 
 Data for all apps is stored in localStorage.
-Application code is designed in way that allows expanding/adding new applications.
+Application code is designed in way that allows expanding/adding/coding new small apps easily.
 For now there are 3. Probably in future there will be more
