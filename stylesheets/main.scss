@@ -1,0 +1,136 @@
+@import "reset";
+@import "alarm";
+@import "notes";
+@import "stopWatch";
+
+$headerBg : #191919;
+$defaultFontColor : #cbcbcb;
+$bodyBg : #3F4041;
+$defaultPadding : 20px 20px 20px 20px;
+
+
+::-webkit-scrollbar {
+  display: none;
+  /*Samo safari browseri*/
+}
+
+.main{
+  background-color: $headerBg;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.header{
+  background-color: $headerBg;
+  width: 100%;
+  box-shadow: 2px 2px 2px black;
+  h1{
+    color: $defaultFontColor;
+    text-align: center;
+    font-size: 3.5rem;
+    padding: $defaultPadding;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    &:first-letter{
+      color: red;
+    }
+  }
+}
+
+.alarm{
+  background-color: $bodyBg;
+  color: #E9E6E4;
+  padding: 15px 20px 15px 20px;
+  transition: 0.3s ease-in-out;
+  box-sizing: border-box;
+  &:hover{
+    background-color: lighten($bodyBg, 25%);
+  }
+  img{
+    float: left;
+  }
+
+  h3{
+    font-size: 3em;
+    padding-top: 63px;
+  }
+  button{
+
+      background-color: $bodyBg;
+      color: white;
+      width: 300px;
+      margin-top: 10px;
+      padding: 5px;
+  }
+}
+
+
+.notes{
+  @extend .alarm;
+  background-color: darken($bodyBg, 10%);
+  transition: 0.3s ease-in-out;
+  padding: $defaultPadding;
+  &:hover{
+    background-color: lighten($bodyBg, 25%);
+  }
+}
+
+.stopwatch{
+  @extend .alarm;
+  padding: $defaultPadding;
+}
+
+.timer{
+  @extend .notes;
+  padding: $defaultPadding;
+}
+
+
+@media screen and(max-width: 700px){
+  html, body{
+    overflow: auto;
+  }
+  .header h1{
+    font-size: 3em;
+  }
+
+  .alarm{
+    button{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and(max-width: 500px){
+
+  .alarm{
+    font-size: 1em;
+    button{
+      width: 100%;
+    }
+    img{
+      float: none;
+    }
+    h3{
+      padding-top: 0;
+    }
+  }
+  
+  .notes{
+    img{
+      float: none;
+    }
+    h3{
+      padding-top: 0;
+    }
+  }
+  
+}
+
+
+
+@include alarm();
+@include notes();
+@include stopWatch();
+@include meyer-reset();
+

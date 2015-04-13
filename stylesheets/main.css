@@ -1,0 +1,264 @@
+::-webkit-scrollbar {
+  display: none;
+  /*Samo safari browseri*/ }
+
+.main {
+  background-color: #191919;
+  height: 100%;
+  box-sizing: border-box; }
+
+.header {
+  background-color: #191919;
+  width: 100%;
+  box-shadow: 2px 2px 2px black; }
+  .header h1 {
+    color: #cbcbcb;
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 20px 20px 20px 20px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100; }
+    .header h1:first-letter {
+      color: red; }
+
+.alarm, .notes, .timer, .stopwatch {
+  background-color: #3f4041;
+  color: #E9E6E4;
+  padding: 15px 20px 15px 20px;
+  transition: 0.3s ease-in-out;
+  box-sizing: border-box; }
+  .alarm:hover, .notes:hover, .timer:hover, .stopwatch:hover {
+    background-color: #7e8082; }
+  .alarm img, .notes img, .timer img, .stopwatch img {
+    float: left; }
+  .alarm h3, .notes h3, .timer h3, .stopwatch h3 {
+    font-size: 3em;
+    padding-top: 63px; }
+  .alarm button, .notes button, .timer button, .stopwatch button {
+    background-color: #3f4041;
+    color: white;
+    width: 300px;
+    margin-top: 10px;
+    padding: 5px; }
+
+.notes, .timer {
+  background-color: #262727;
+  transition: 0.3s ease-in-out;
+  padding: 20px 20px 20px 20px; }
+  .notes:hover, .timer:hover {
+    background-color: #7e8082; }
+
+.stopwatch {
+  padding: 20px 20px 20px 20px; }
+
+.timer {
+  padding: 20px 20px 20px 20px; }
+
+@media screen and (max-width: 700px) {
+  html, body {
+    overflow: auto; }
+
+  .header h1 {
+    font-size: 3em; }
+
+  .alarm button, .notes button, .timer button, .stopwatch button {
+    width: 100%; } }
+@media screen and (max-width: 500px) {
+  .alarm, .notes, .timer, .stopwatch {
+    font-size: 1em; }
+    .alarm button, .notes button, .timer button, .stopwatch button {
+      width: 100%; }
+    .alarm img, .notes img, .timer img, .stopwatch img {
+      float: none; }
+    .alarm h3, .notes h3, .timer h3, .stopwatch h3 {
+      padding-top: 0; }
+
+  .notes img, .timer img {
+    float: none; }
+  .notes h3, .timer h3 {
+    padding-top: 0; } }
+.clock {
+  width: 100%;
+  text-align: center;
+  background-color: #191919;
+  color: white;
+  font-family: "digi";
+  font-size: 4em; }
+
+.t1 {
+  background-color: black;
+  border-radius: 8px;
+  border-color: red; }
+
+.alarmView p {
+  font-family: "Verdana";
+  font-style: italic; }
+
+.centerClock {
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box; }
+
+.centerClock select {
+  color: white;
+  background-color: #3f4041;
+  margin-bottom: 10px; }
+
+.dots {
+  display: inline;
+  color: #36ff66; }
+
+.centerClock button {
+  width: 100%;
+  color: white;
+  background-color: #3f4041;
+  float: left;
+  padding: 15px;
+  transition: 0.2s ease-in-out; }
+  .centerClock button:hover {
+    background-color: #7e8082; }
+
+@media screen and (max-width: 300px) {
+  .clock {
+    font-size: 4em; } }
+.notesUI {
+  width: 100%;
+  box-sizing: border-box; }
+
+.notesText {
+  width: 60%;
+  float: left;
+  box-sizing: border-box; }
+  .notesText input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #3f4041;
+    color: #fff;
+    font-size: 1.5em; }
+
+.notesButtons {
+  width: 40%;
+  box-sizing: border-box;
+  float: left; }
+  .notesButtons input {
+    width: 33.2%;
+    box-sizing: border-box;
+    padding: 30px;
+    color: white;
+    background-color: #3f4041;
+    float: left;
+    transition: 0.2s ease-in-out;
+    text-align: center; }
+    .notesButtons input:hover {
+      background-color: #7e8082; }
+
+.notesData {
+  padding-top: 80px;
+  box-sizing: border-box; }
+  .notesData li {
+    padding: 30px;
+    color: white;
+    background-color: #3f4041;
+    transition: 0.3s ease-in-out; }
+    .notesData li span {
+      color: red;
+      font-size: 1em;
+      float: right;
+      cursor: pointer; }
+    .notesData li:hover {
+      background-color: #7e8082; }
+    .notesData li:nth-child(odd) {
+      background-color: #262727;
+      transition: 0.3s ease-in-out; }
+      .notesData li:nth-child(odd):hover {
+        background-color: #7e8082; }
+
+@media all and (max-width: 700px) {
+  .notesText {
+    float: none;
+    width: 100%; }
+    .notesText input {
+      font-size: 0.7em;
+      transition: 0.2s ease-in-out;
+      width: 100%; }
+
+  .notesButtons {
+    width: 100%;
+    margin-bottom: 30px; }
+    .notesButtons input {
+      padding: 20px;
+      width: 100%; } }
+@media all and (max-width: 650px) {
+  .notesData {
+    padding-top: 60px; } }
+.stopwatchStyle {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+  .stopwatchStyle ul {
+    width: 100%; }
+    .stopwatchStyle ul li {
+      color: white;
+      background-color: #3f4041;
+      border: 2px solid #ababab; }
+
+.stopwatchStyle > button {
+  width: 100%;
+  color: white;
+  background-color: #3f4041;
+  float: left;
+  padding: 15px;
+  transition: 0.2s ease-in-out; }
+  .stopwatchStyle > button:hover {
+    background-color: #7e8082; }
+
+.stopWatch {
+  width: 100%;
+  text-align: center;
+  background-color: #191919;
+  color: white;
+  font-size: 4em; }
+
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
