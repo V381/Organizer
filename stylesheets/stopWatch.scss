@@ -1,0 +1,40 @@
+
+
+@mixin stopWatch(){
+
+.stopwatchStyle{
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  ul{
+    width: 100%;
+    li{
+      color: white;
+      background-color: #3f4041;
+      border: 2px solid #ababab;
+    }
+  }
+
+}
+
+  .stopwatchStyle > button{
+    width: 100%;
+    color: white;
+    background-color: #3f4041;
+    float: left;
+    padding: 15px;
+    transition: 0.2s ease-in-out;
+    &:hover{
+      background-color: lighten($bodyBg, 25%);
+    }
+  }
+
+  .stopWatch{
+    width: 100%;
+    text-align: center;
+    background-color:#191919;
+    color: white;
+    font-size: 4em;
+  }
+}
