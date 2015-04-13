@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>0rganizer</title>
+    <meta name="author" content="Pavle">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <link type="text/css" rel="stylesheet" href="stylesheets/main.css">
+    <link rel="shortcut icon" href="icons/organizerIcon.png"/>
+</head>
+<body>
+
+<!-- Main Layout -->
+
+<header class="header">
+    <h1>Organizer</h1>
+</header>
+
+<main class="main">
+
+        <script type="text/template" id="mainLayout">
+
+            <section class="alarm">
+                <img src="icons/alarm.png">
+                <h3>Alarm</h3>
+            </section>
+
+            <section class="notes">
+                <img src="icons/tasks.png">
+                <h3>Notes</h3>
+                <p></p>
+            </section>
+
+            <section class="stopwatch">
+                <img src="icons/stopwatch.png">
+                <h3>Stopwatch</h3>
+                <p></p>
+            </section>
+
+
+
+
+        </script>
+
+    <section class="whatNow"></section>
+    <section class="alarmView">
+
+        <script type="text/template" id="alarmView">
+            <article class='centerClock'>
+                <p class="clock"></p>
+                <form>
+                    <label>
+
+                        <select class="s0" required>
+
+                        </select>
+                        <p class="dots">:</p>
+                        <select class="s1">
+
+                        </select>
+
+                    </label>
+                </form>
+                <button class="start">Set Alarm</button>
+                <button class="staph">Stop Alarm</button>
+                <button class="mainPage">Back to Main Menu</button>
+            </article>
+        </script>
+    </section>
+
+    <section class="notes">
+        <script type="text/template" id="notes">
+
+           <article class="notesUI">
+               <form>
+                  <div class="notesText">
+                   <label>
+                       <input type="text" name="data" class="data">
+                   </label>
+                  </div>
+
+                  <div class="notesButtons">
+                   <input type="button" name="add" value="Add" class="addInputData">
+
+                   <label>
+                       <input type="button" name="removeAll" value="Clear" class="removeAll">
+                   </label>
+
+                   <label>
+                       <input type="button" name="save" value="Exit" class="save">
+                   </label>
+                  </div>
+
+               </form>
+
+           </article>
+
+
+           <ul class="notesData">
+
+           </ul>
+
+        </script>
+    </section>
+
+
+    <section class="stopwatchView">
+        <script type="text/template" id="stopWatchView">
+           <article class="stopwatchStyle">
+                <p class="stopWatch"></p>
+                <button class="startStopWatch">Start</button>
+                <button class="stopStopWatch">Stop</button>
+                <button class="laps">Lap</button>
+                <button class="restartStopWatch">Restart</button>
+                <button class="mainPage2">Back To Main Menu</button>
+                <button class="headLineForLaps">Clear laps</button>
+                <ul class="lap"></ul>
+
+           </article>
+        </script>
+    </section>
+</main>
+
+<script src="external/moment.js"></script>
+<script src="external/jquery-2.1.3.min.js"></script>
+<script src="external/underscore-min.js"></script>
+<script src="external/backbone-min.js"></script>
+<script src="external/backbone.localStorage-min.js"></script>
+
+<script src="models/defaultCSSData.js"></script>
+<script src="models/stopWatchData.js"></script>
+<script src="models/notesData.js"></script>
+<script src="models/alarmData.js"></script>
+<script src="collections/models.js"></script>
+<script src="views/mainView.js"></script>
+<script src="views/alarm.js"></script>
+<script src="views/notesView.js"></script>
+<script src="views/stopWatch.js"></script>
+<script src="routers/router.js"></script>
+
+<script>
+
+//    var zz = Backbone.View.extend({
+//        el : ".main",
+//
+//        template : _.template($("#hm").html()),
+//
+//        render : function () {
+//            $(this.el).html(this.template());
+//        }
+//
+//    });
+
+
+</script>
+
+
+</body>
+</html>
