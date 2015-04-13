@@ -1,0 +1,56 @@
+@mixin alarm(){
+  .clock{
+    width: 100%;
+    text-align: center;
+    background-color:#191919;
+    color: white;
+    font-family: "digi";
+    font-size: 4em;
+  }
+  .t1{
+    background-color: black;
+    border-radius: 8px;
+    border-color: red;
+  }
+
+  .alarmView p{
+    font-family: "Verdana";
+    font-style: italic;
+  }
+
+  .centerClock{
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .centerClock select{
+    color: white;
+    background-color: #3f4041;
+    margin-bottom: 10px;
+  }
+
+  .dots{
+    display: inline;
+    color: #36ff66;
+  }
+
+  .centerClock button{
+    width: 100%;
+    color: white;
+    background-color: #3f4041;
+    float: left;
+    padding: 15px;
+    transition: 0.2s ease-in-out;
+    &:hover{
+      background-color: lighten($bodyBg, 25%);
+    }
+  }
+
+  @media screen and (max-width: 300px){
+    .clock{
+      font-size: 4em;
+    }
+  }
+}

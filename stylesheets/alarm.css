@@ -1,0 +1,42 @@
+.clock {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: #36ff66;
+  font-family: "digi";
+  font-size: 4em; }
+
+.t1 {
+  background-color: black;
+  border-radius: 8px;
+  border-color: red; }
+
+.alarmView p {
+  font-family: "Verdana";
+  font-style: italic; }
+
+.centerClock {
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box; }
+
+.centerClock > select {
+  color: #36ff66;
+  background-color: black;
+  border: 2px solid green; }
+
+.dots {
+  display: inline;
+  color: #36ff66; }
+
+.centerClock > button {
+  width: 50%;
+  color: #36ff66;
+  background-color: black;
+  float: left;
+  border: 2px solid green; }
+
+@media screen and (max-width: 300px) {
+  .clock {
+    font-size: 4em; } }
