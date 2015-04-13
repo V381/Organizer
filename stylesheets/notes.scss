@@ -1,0 +1,98 @@
+@mixin notes(){
+
+  .notesUI{
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  .notesText{
+    width: 60%;
+    float: left;
+    box-sizing: border-box;
+    input{
+      width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+      background-color: #3f4041;
+      color: #fff;
+      font-size: 1.5em;
+    }
+  }
+
+  .notesButtons{
+    width: 40%;
+    box-sizing: border-box;
+    float: left;
+    input{
+      width: 33.2%;
+      box-sizing: border-box;
+      padding: 30px;
+      color: white;
+      background-color: #3f4041;
+      float: left;
+      transition: 0.2s ease-in-out;
+      text-align: center;
+      &:hover{
+        background-color: lighten($bodyBg, 25%);
+      }
+    }
+  }
+
+  .notesData{
+    padding-top: 80px;
+    box-sizing: border-box;
+    li{
+      padding: 30px;
+      color: white;
+      background-color: #3f4041;
+      transition: 0.3s ease-in-out;
+      span{
+        color: red;
+        font-size: 1em;
+        float: right;
+        cursor: pointer;
+      }
+      &:hover{
+        background-color: lighten($bodyBg, 25%);
+      }
+      &:nth-child(odd){
+        background-color: #262727;
+        transition: 0.3s ease-in-out;
+        &:hover{
+          background-color: lighten($bodyBg, 25%);
+        }
+      }
+    }
+  }
+
+  @media all and(max-width: 700px){
+    .notesText{
+      float: none;
+      width: 100%;
+      input{
+        font-size: 0.7em;
+        transition: 0.2s ease-in-out;
+        width: 100%;
+      }
+    }
+
+    .notesButtons{
+      width: 100%;
+      margin-bottom: 30px;
+      input{
+        padding: 20px;
+        width: 100%;
+
+      }
+    }
+
+  }
+
+  @media all and(max-width: 650px){
+    .notesData{
+      padding-top: 60px;
+    }
+  }
+
+}
