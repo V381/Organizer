@@ -52,7 +52,7 @@ var mainView = Backbone.View.extend({
         // Chrome sort classes and attributes, firefox does not...,
         if (navigator.userAgent.indexOf("Firefox") != -1) {
             var firefoxLocalStorage = Object.keys(localStorage);
-            serializeLocalStorage.shift();
+            firefoxLocalStorage.shift();
             var numberOfFirefoxNotes = _.filter(firefoxLocalStorage, function(note){return note.charAt(0) == "n"}).length;
             $(notesElement).html("Notes: " + numberOfFirefoxNotes);
         }
