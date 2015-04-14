@@ -99,7 +99,7 @@ var notesView = Backbone.View.extend({
               // Last element in Chrome niz[i] is NOT UNDEFINED.
                 for (var i = 0; i < localStorage.length; i++){
                     if (localStorage.key(i).indexOf("note") != -1){
-                        $("ul").append(("<li data='note" + niz[i-1] + "' class='index'>")
+                        $("ul").append(("<li data='" + localStorage.key(i) + "' class='index'>")
                         + localStorage.getItem(localStorage.key(i))
                         + "<span>x</span>" +
                         "</li>");
