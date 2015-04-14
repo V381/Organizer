@@ -90,7 +90,7 @@ var notesView = Backbone.View.extend({
         for (var j = 0; j < storageToArr.length; j++){
             niz.push(storageToArr[j].slice(4));
         }
-        niz.sort(); // Firefox does not sort automaticaly, Chrome does!!!!!!!!!!
+        niz.sort(); // Firefox does not sort automatically, Chrome does!!!!!!!!!!
         niz.pop();
         if (navigator.userAgent.indexOf("Firefox") != -1) {
             if (!localStorage.getItem("origin=true")){}
