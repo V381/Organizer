@@ -103,12 +103,4 @@ var mainView = Backbone.View.extend({
     window.onload = loadNotes;
 })();
 
-/*
-*
-*  e1: https://mega.co.nz/#!iVpgBarY!3pNc-l2_tbJlAyay0d476j0JrxnnLY7jhmR1hPntxQA
-*  e2: https://mega.co.nz/#!cUc0mRDJ!_A2S9hUH57v8vTANd_cytW2ojmceyQOs0sxD5vNQPqw
-*  e3: https://mega.co.nz/#!KNBgzbKS!MIBgTf1oQtEaGN_02GpkVxD4XK6kKfniEUpRPfQ554o
-*  e4: https://mega.co.nz/#!zIZmzZqI!Z5BQxwv1Qq--KuP-r91eir85ik-HmMFg74lltDpmqRI
-*
-* */
 
