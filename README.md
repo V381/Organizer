@@ -4,6 +4,7 @@
 
 <p>Collection of small useful apps, written with Backbone.js/Javascript</p>
 <p>Scss is written with fluid/responsive in mind</p>
+Check it out here: v381.github.io/Organizer/html.html
 
 <ul>
   <li>Alarm</li>
