@@ -1,6 +1,5 @@
 <h1>Organizer
 
-<hr>
 
 <p>Collection of small useful apps, written with Backbone.js/Javascript</p>
 <p>Scss is written with fluid/responsive in mind</p>
@@ -20,7 +19,6 @@ Check it out here: http://v381.github.io/Organizer/html.html
   <ul>
     <li>Alarm is saved in session storage</li>
   </ul>
-<hr>
 
 <h3>Notes</h3>
 <p>Controls:</p>
