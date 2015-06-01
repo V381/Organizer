@@ -1,4 +1,4 @@
-<h1>Organizer
+<h1>Organizer</h1>
 
 
 <p>Collection of small useful apps, written with Backbone.js/Javascript</p>
